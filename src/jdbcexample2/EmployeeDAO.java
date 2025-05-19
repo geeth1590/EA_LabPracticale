@@ -6,7 +6,7 @@ import java.util.List;
 public class EmployeeDAO {
 
 private static EmployeeDAO Employee;
-// Create an employee
+
 public static void addEmployee(String name, String position, double
 salary) {
 String sql = "INSERT INTO employees (name, position, salary) VALUES(?, ?, ?)";
@@ -21,7 +21,7 @@ System.out.println("Employee added successfully. Rows affected: "+ rowsAffected)
 e.printStackTrace();
 }
 }
-// Read all employees
+
 public static List<EmployeeDAO> getAllEmployees() {
 List<EmployeeDAO> employees = new ArrayList <>();
 String sql = "SELECT * FROM employees";
@@ -58,7 +58,7 @@ System.out.println("Employee updated successfully. Rows affected:"+ rowsAffected
 e.printStackTrace();
 }
 }
-// Delete an employee
+
 public static void deleteEmployee(int id) {
 String sql = "DELETE FROM employees WHERE id = ?";
 try (Connection conn = DatabaseConnection.getConnection();

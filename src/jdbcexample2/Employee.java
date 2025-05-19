@@ -4,10 +4,7 @@
  */
 package jdbcexample2;
 
-/**
- *
- * @author User
- */
+
 public class Employee {
 private int id;
 private String name;
@@ -19,7 +16,7 @@ this.name = name;
 this.position = position;
 this.salary = salary;
 }
-// Getters and setters
+
 public int getId() { return id; }
 public void setId(int id) { this.id = id; }
 public String getName() { return name; }
